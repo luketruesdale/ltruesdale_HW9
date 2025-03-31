@@ -53,6 +53,17 @@ form {
     align-items: center;
 }
 
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;  /* Space between label and select */
+}
+
 input, select {
     margin: 5px 0;
     padding: 8px;
