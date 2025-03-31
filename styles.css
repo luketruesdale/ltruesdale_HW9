@@ -1,14 +1,17 @@
+/* General styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 50px;
 }
 
+/* Container styling */
 .container {
     max-width: 400px;
     margin: auto;
 }
 
+/* Button styling */
 .button {
     background-color: blue;
     color: white;
@@ -16,8 +19,16 @@ body {
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
+.button:hover {
+    background-color: darkblue;
+}
+
+/* Tooltip styling */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -27,9 +38,9 @@ body {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 200px;
-    background-color: #333333;
+    background-color: #333;
     color: #f8f8f8;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     border-radius: 6px;
@@ -40,13 +51,14 @@ body {
     z-index: 1;
     top: 100%;
     left: 50%;
-    margin-left: -100px;
+    transform: translateX(-50%);
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
 
+/* Form styling */
 form {
     display: flex;
     flex-direction: column;
@@ -55,22 +67,30 @@ form {
 
 .form-group {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    width: 100%;
 }
 
+/* Label styling for accessibility */
 label {
-    margin-right: 10px;  /* Space between label and select */
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
+/* Input and select styling */
 input, select {
     margin: 5px 0;
     padding: 8px;
-    width: 80%;
+    width: 100%;
     max-width: 300px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
+/* Button styling */
 button {
     background-color: green;
     color: white;
@@ -78,48 +98,39 @@ button {
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
 }
 
 button:hover {
     background-color: darkgreen;
 }
 
-/* New CSS for alignment of radio buttons and checkboxes */
+/* Radio button and checkbox styling */
 .radio-group, .checkbox-group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align the labels and inputs to the left */
-    margin-bottom: 15px; /* Space between groups */
+    align-items: flex-start;
+    margin-bottom: 15px;
 }
 
 .radio-group label, .checkbox-group label {
-    margin-bottom: 5px; /* Adds space between each label and input */
+    display: flex;
+    align-items: center;
 }
 
 input[type="radio"], input[type="checkbox"] {
-    margin-right: 10px;  /* Adds space between the input and its label */
+    margin-right: 10px;
 }
 
-/* Adjustments for form layout */
-.form-group label {
-    display: inline-block;
-    width: 100%; /* Ensure the label takes the full width */
-    text-align: left; /* Align label to the left */
-}
-
-input[type="radio"], input[type="checkbox"] {
-    margin-right: 10px;  /* Adds space between the radio/checkbox and label */
-}
-
-button {
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+/* Ensuring form elements are easily clickable */
+label {
     cursor: pointer;
-    margin-top: 20px;  /* Add some space above the button */
 }
 
-button:hover {
-    background-color: darkgreen;
+/* Improving focus visibility for accessibility */
+input:focus, select:focus, button:focus {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
+    box-shadow: 0 0 5px rgba(0, 95, 204, 0.5);
 }
