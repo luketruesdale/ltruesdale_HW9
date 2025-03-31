@@ -83,3 +83,43 @@ button {
 button:hover {
     background-color: darkgreen;
 }
+
+/* New CSS for alignment of radio buttons and checkboxes */
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the labels and inputs to the left */
+    margin-bottom: 15px; /* Space between groups */
+}
+
+.radio-group label, .checkbox-group label {
+    margin-bottom: 5px; /* Adds space between each label and input */
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;  /* Adds space between the input and its label */
+}
+
+/* Adjustments for form layout */
+.form-group label {
+    display: inline-block;
+    width: 100%; /* Ensure the label takes the full width */
+    text-align: left; /* Align label to the left */
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;  /* Adds space between the radio/checkbox and label */
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;  /* Add some space above the button */
+}
+
+button:hover {
+    background-color: darkgreen;
+}

@@ -10,22 +10,54 @@
     <form action="ThankYouPage.html" method="GET">
         <h2>Business Analytics Student Survey</h2>
 
+        <!-- Year radio buttons -->
         <label>I am finishing my:</label><br>
-        <input type="radio" name="year" value="1" required> First year at Iowa <br>
-        <input type="radio" name="year" value="2"> Second year at Iowa <br>
-        <input type="radio" name="year" value="3"> Third year at Iowa <br>
-        <input type="radio" name="year" value="4"> Fourth year at Iowa <br>
-        <input type="radio" name="year" value="5"> Fifth or more year at Iowa <br>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="year" value="1" required> First year at Iowa
+            </label>
+            <label>
+                <input type="radio" name="year" value="2"> Second year at Iowa
+            </label>
+            <label>
+                <input type="radio" name="year" value="3"> Third year at Iowa
+            </label>
+            <label>
+                <input type="radio" name="year" value="4"> Fourth year at Iowa
+            </label>
+            <label>
+                <input type="radio" name="year" value="5"> Fifth or more year at Iowa
+            </label>
+        </div>
 
+        <!-- Completed classes -->
         <label>BAIS core class I have completed:</label><br>
-        <input type="checkbox" name="class" value="IS"> Information Systems <br>
-        <input type="checkbox" name="class" value="Operations"> Operations <br>
-        <input type="checkbox" name="class" value="Foundations"> Foundations of Business Analytics <br>
-        <input type="checkbox" name="class" value="Computational"> Computational Thinking <br>
-        <input type="checkbox" name="class" value="Database"> Database Management <br>
-        <input type="checkbox" name="class" value="Data Wrangling"> Data Wrangling <br>
-        <input type="checkbox" name="class" value="Data Mining"> Data Mining <br>
-        <input type="checkbox" name="class" value="Capstone"> BAIS Capstone <br>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="class" value="IS"> Information Systems
+            </label>
+            <label>
+                <input type="checkbox" name="class" value="Operations"> Operations
+            </label>
+            <label>
+                <input type="checkbox" name="class" value="Foundations"> Foundations of Business Analytics
+            </label>
+            <label>
+                <input type="checkbox" name="class" value="Computational"> Computational Thinking
+            </label>
+            <label>
+                <input type="checkbox" name="class" value="Database"> Database Management
+            </label>
+            <label>
+                <input type="checkbox" name="class" value="Data Wrangling"> Data Wrangling
+            </label>
+            <label>
+                <input type="checkbox" name="class" value="Data Mining"> Data Mining
+            </label>
+            <label>
+                <input type="checkbox" name="class" value="Capstone"> BAIS Capstone
+            </label>
+        </div>
 
         <button type="submit">Finish</button>
     </form>
