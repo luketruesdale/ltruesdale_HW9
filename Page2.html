@@ -5,13 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAIS Survey - Page 2</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .radio-group label, .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    </style>
 </head>
 <body>
     <form action="ThankYouPage.html" method="GET">
         <h2>Business Analytics Student Survey</h2>
 
         <!-- Year radio buttons -->
-        <label>I am finishing my:</label><br>
+        <label><strong>I am finishing my:</strong></label>
         <div class="radio-group">
             <label>
                 <input type="radio" name="year" value="1" required> First year at Iowa
@@ -31,7 +47,7 @@
         </div>
 
         <!-- Completed classes -->
-        <label>BAIS core class I have completed:</label><br>
+        <label><strong>BAIS core class I have completed:</strong></label>
         <div class="checkbox-group">
             <label>
                 <input type="checkbox" name="class" value="IS"> Information Systems
